@@ -13,9 +13,9 @@ type CollapseProps = {
 };
 
 const CollapseButton = ({ content }: { content: ContentProps }) => {
-  const [open, setOpen] = useState(false);
-  const toggleCollapse = () => {
-    setOpen((prevOpen) => !prevOpen);
+  const [open, setOpen] = useState<boolean>(false);
+  const toggleCollapse = (): void => {
+    setOpen((prevOpen: boolean) => !prevOpen);
   };
 
   return (

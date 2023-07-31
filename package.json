@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev-errors": "tsc --noEmit --watch",
+    "dev-errors": "tsc src/**/*.ts' --noEmit --watch",
     "build": "tsc && vite build",
     "lint": "nodemon --watch 'src/**/*.ts' --exec \"eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0\"",
     "preview": "vite preview",
