@@ -1,0 +1,50 @@
+@import "../../sass/Utils/mixins.scss";
+@import "../../sass/Utils/variables.scss";
+
+.container {
+  @include containerMargins;
+  & main {
+    margin: 20px 0;
+    .cards {
+      display: grid;
+      gap: 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    & main {
+      margin: 50px 0;
+    }
+  }
+}
+
+/* Tablet responsive */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    & main {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+/* Dekstop responsive */
+
+@media (min-width: 1024px) {
+  .container {
+    & main {
+      .cards {
+        grid-template-columns: repeat(3, 1fr);
+        background-color: $SecondaryColor;
+        border-radius: 25px;
+        padding: 50px;
+        gap: 60px;
+        justify-content: space-around;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.size {
+  height: 16px;
+  width: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .size {
+    height: 30px;
+    width: 30px;
+  }
+}

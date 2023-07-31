@@ -1,0 +1,30 @@
+@import "../../sass/Utils/variables.scss";
+@import "../../sass/Utils/mixins.scss";
+
+.footer {
+  height: 209px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: black;
+  & img {
+    height: 40px;
+    width: 122px;
+  }
+
+  & span {
+    color: white;
+    font-size: $fontSizeSmall;
+  }
+}
+
+/* Desktop responsive */
+
+@media (min-width: 1024px) {
+  .footer {
+    & span {
+      font-size: 24px;
+    }
+  }
+}

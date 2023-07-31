@@ -1,0 +1,60 @@
+.bannerContainer {
+  position: relative;
+  margin-bottom: 15px;
+  .background {
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+    border-radius: 10px;
+    &--about {
+      margin-bottom: 10px;
+      height: 223px;
+      width: 100%;
+      border-radius: 25px;
+    }
+  }
+
+  & h1 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .aboutBackground {
+    background-image: url("../../assets/images/about-background.svg");
+    height: 223px;
+  }
+
+  .homeBackground {
+    height: 111px;
+    background-image: url("../../assets/images/home-background-mobile.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .bannerContainer {
+    margin-bottom: 45px;
+    .background {
+      height: 223px;
+    }
+    & h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 48px;
+    }
+    .aboutBackground {
+      background-image: url("../../assets/images/about-background-desktop.svg");
+    }
+
+    .homeBackground {
+      background-image: url("../../assets/images/home-background.svg");
+    }
+  }
+}

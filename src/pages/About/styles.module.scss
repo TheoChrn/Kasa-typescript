@@ -1,0 +1,6 @@
+@import "../../sass/Utils/mixins.scss";
+@import "../../sass/Utils/variables.scss";
+
+.container {
+  @include containerMargins;
+}
